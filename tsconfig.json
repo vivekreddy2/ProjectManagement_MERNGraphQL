@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "pretty": true,
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ES2020",
+        "removeComments": true,
+        "inlineSourceMap": true,
+        "outDir": "dist",
+        "allowImportingTsExtensions": false,
+        "noEmit": false
+    },
+    "include": ["src/", "server/index.ts"]
+}

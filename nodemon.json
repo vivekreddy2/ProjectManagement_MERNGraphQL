@@ -1,0 +1,4 @@
+{
+    "ignore": [".git", "node_modules", "dist"],
+    "exec": "npm run serve"
+}
