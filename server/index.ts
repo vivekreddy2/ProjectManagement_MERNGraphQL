@@ -1,10 +1,10 @@
 import express from 'express';
 import 'dotenv/config';
-import { createHandler } from 'graphql-http';
+import { createHandler } from 'graphql-http/lib/use/http';
 import ClientSchema from './schema/schema.js';
 import expressPlayground from 'graphql-playground-middleware-express';
 
-const port = process.env.PORT || 1131;
+const port = process.env.PORT || 1138;
 
 
 const app = express()
@@ -14,3 +14,4 @@ app.use('/graphql', graphqlHandler);
 app.get('/playground', expressPlayground.default({endpoint: '/graphql'}));
 
 app.listen(port, console.log(`Server running on port ${port}`))
+ 
